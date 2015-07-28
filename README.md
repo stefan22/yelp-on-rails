@@ -20,4 +20,4 @@ Ran into a few issues running rails server but all resolved - brew install xz.
 * vendors – a place for resources that you didn't write but are needed for the project, like jQuery; also called 3rd 
   party assets
 
-Added gems for testing - rspec ready.
+Added gems for testing - rspec ready (and ran bin/rails generate rspec:install)
