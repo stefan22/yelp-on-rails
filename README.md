@@ -19,3 +19,5 @@ Ran into a few issues running rails server but all resolved - brew install xz.
 * tmp - temporary stuff gets stored here
 * vendors – a place for resources that you didn't write but are needed for the project, like jQuery; also called 3rd 
   party assets
+
+Added gems for testing - rspec ready.
