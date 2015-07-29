@@ -3,4 +3,6 @@ class RestaurantsController < ApplicationController
     @restaurants = Restaurant.all
   end
 
+  
+
 end
