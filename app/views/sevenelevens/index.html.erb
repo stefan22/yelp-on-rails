@@ -1,0 +1,8 @@
+<% if @sevenelevens.any? %>
+  <% @sevenelevens.each do |seveneleven| %>
+    <h2><%= seveneleven.name %></h2>
+  <% end %>
+  <% else %>
+  <h3>No seven elevens have been added yet</h3>
+<% end %>
+<a href="#">Add a seven eleven</a>
