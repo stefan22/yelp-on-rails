@@ -8,7 +8,8 @@ class RestaurantsController < ApplicationController
   end
 
   def create
-    raise 'create is the params returned from the form submission'
+    Restaurant.create(params[:restaurant])
+    redirect '/restaurants'
   end
 
 end
