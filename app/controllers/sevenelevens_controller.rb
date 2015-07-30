@@ -16,4 +16,8 @@ class SevenelevensController < ApplicationController
     params.require(:seveneleven).permit(:name)
   end
 
+  def show
+    @seveneleven = Seveneleven.find(params[:id])
+  end
+
 end

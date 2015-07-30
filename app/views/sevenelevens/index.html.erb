@@ -1,6 +1,6 @@
 <% if @sevenelevens.any? %>
   <% @sevenelevens.each do |seveneleven| %>
-    <h2><%= seveneleven.name %></h2>
+    <h2><%= link_to seveneleven.name, seveneleven_path(seveneleven) %></h2>
   <% end %>
   <% else %>
   <h3>No seven elevens have been added yet</h3>

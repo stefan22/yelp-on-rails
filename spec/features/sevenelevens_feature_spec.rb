@@ -20,7 +20,7 @@ feature 'seven elevens' do
     end
   end
 
-  context 'creating a restaurant' do
+  context 'creating a seveneleven' do
     scenario 'prompts to add a seven eleven then shows you the seven eleven' do
       visit '/sevenelevens'
       click_link 'Add a seven eleven'
@@ -30,6 +30,22 @@ feature 'seven elevens' do
       expect(current_path).to eq '/sevenelevens'
     end
   end
+
+  context 'showing a seveneleven' do
+    let!(:reseda){Seveneleven.create(name:'Reseda')}
+    scenario 'let a user view a seveneleven' do
+      visit '/sevenelevens'
+      click_link 'Reseda'
+      expect(page).to have_content 'Reseda'
+      expect(current_path).to eq "/sevenelevens/#{reseda.id}"
+    end
+  end
+
+
+
+
+
+
 
 
 
