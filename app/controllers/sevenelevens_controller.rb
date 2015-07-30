@@ -4,11 +4,11 @@ class SevenelevensController < ApplicationController
   end
 
   def new
-
+    @seveneleven = Seveneleven.new
   end
 
   def create
-    Seveneleven.create(seven_params)
+    @seveneleven = Seveneleven.create(seven_params)
     redirect_to '/sevenelevens'
   end
 
