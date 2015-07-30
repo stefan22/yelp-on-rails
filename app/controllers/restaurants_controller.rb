@@ -16,4 +16,6 @@ class RestaurantsController < ApplicationController
     params.require(:restaurant).permit(:name)
   end
 
+
+
 end
