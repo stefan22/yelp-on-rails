@@ -6,6 +6,8 @@ Getting Application Up and Running:
 
 Ran into a few issues running rails server but all resolved - brew install xz.
 
+Working on two branches simultaneously
+
 ## Rails info:
 * app – where your code goes. Contains models, views and controllers; as well also JavaScript & CSS assets
 * bin – contains specific versions of executables such as rails and rake for doing low level tasks
