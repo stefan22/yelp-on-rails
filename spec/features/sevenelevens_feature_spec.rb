@@ -20,6 +20,17 @@ feature 'seven elevens' do
     end
   end
 
+  context 'creating a restaurant' do
+    scenario 'prompts to add a seven eleven then shows you the seven eleven' do
+      visit '/sevenelevens'
+      click_link 'Add a seven eleven'
+      fill_in 'Name', with: 'San Fernando'
+      click_button 'Create Seveneleven'
+      expect(page).to have_content 'San Fernando'
+      expect(current_path).to eq '/sevenelevens'
+    end
+  end
+
 
 
 end
