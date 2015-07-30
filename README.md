@@ -5,6 +5,7 @@ Getting Application Up and Running:
   * Installed Rails using gem install rails and rails new app command
 
 Ran into a few issues running rails server but all resolved - brew install xz.
+
 Working on two branches simultaneously
 
 ## Rails info:
