@@ -41,6 +41,19 @@ feature 'seven elevens' do
     end
   end
 
+  context 'editing a seveneleven' do
+    before {seveneleven.create(name: 'Reseda')}
+
+    scenario 'lets users edit sevenelevens' do
+        visit '/sevenelevens'
+        click_link 'Edit Reseda'
+        fill_in 'Name', with: 'Encino'
+        click_button 'Update Seveneleven'
+        expect(page).to have_content 'Encino'
+        expect(current_path).to eq '/sevenelevens'
+    end
+  end
+
 
 
 
