@@ -30,5 +30,12 @@ class SevenelevensController < ApplicationController
     redirect_to '/sevenelevens'
   end
 
+  def destroy
+    @seveneleven = Seveneleven.find(params[:id])
+    @seveneleven.destroy
+    flash[:notice] = 'Seveneleven deleted successfully'
+    redirect_to '/sevenelevens'
+  end
+
 
 end

@@ -54,6 +54,17 @@ feature 'seven elevens' do
     end
   end
 
+  context 'deleting a seveneleven' do
+    before {Seveneleven.create(name: 'Reseda')}
+
+    scenario 'let users delete sevenelevens' do
+        visit '/sevenelevens'
+        click_link 'Delete Reseda'
+        expect(page).to have_content 'Seveneleven deleted successfully'
+        expect(current_path).to eq '/sevenelevens'
+    end
+  end
+
 
 
 
