@@ -20,4 +20,15 @@ class SevenelevensController < ApplicationController
     @seveneleven = Seveneleven.find(params[:id])
   end
 
+  def edit
+      @seveneleven = Seveneleven.find(params[:id])
+  end
+
+  def update
+    @seveneleven = Seveneleven.find(params[:id])
+    @seveneleven.update(seven_params)
+    redirect_to '/sevenelevens'
+  end
+
+
 end
