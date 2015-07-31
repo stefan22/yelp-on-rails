@@ -42,7 +42,7 @@ feature 'seven elevens' do
   end
 
   context 'editing a seveneleven' do
-    before {seveneleven.create(name: 'Reseda')}
+    before {Seveneleven.create(name: 'Reseda')}
 
     scenario 'lets users edit sevenelevens' do
         visit '/sevenelevens'
