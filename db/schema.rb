@@ -34,8 +34,9 @@ ActiveRecord::Schema.define(version: 20150802160639) do
   create_table "sevenelevens", force: :cascade do |t|
     t.string   "name"
     t.integer  "rating"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.text     "description"
   end
 
 end
