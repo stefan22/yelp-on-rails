@@ -5,6 +5,13 @@ class ReviewsController < ApplicationController
 
   end
 
+  def create
+    @restaurant = Restaurant.find(params[:restaurant_id])
+    @restaurant.reviews.create(review_params)
+  end
 
+  def review_params
+    params.require(:review).permit(:thoughs, :rating)
+  end
 
 end
