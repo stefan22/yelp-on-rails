@@ -10,7 +10,6 @@ Rails.application.routes.draw do
 
   resources :restaurants do
     resources :reviews
-
   end
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
