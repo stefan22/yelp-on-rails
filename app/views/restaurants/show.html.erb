@@ -2,3 +2,17 @@
 <h3><%= @restaurant.description %></h3>
 
 <a href="/restaurants">back to restaurants</a>
+
+<h3>Reviews for <%= @restaurant.name %></h3>
+
+<% if @restaurant.reviews.any? %>
+  <ul>
+    <% @restaurant.reviews.each do |review| %>
+      <li>
+        <%= review.thoughts %>, <strong><%= review.rating %></strong>/5
+      </li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>No reviews.</p>
+<% end %>
