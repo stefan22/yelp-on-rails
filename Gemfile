@@ -50,4 +50,6 @@ group :development, :test do
 
   gem 'shoulda'
 
+  gem 'rspec-collection_matchers'
+
 end
