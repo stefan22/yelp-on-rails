@@ -14,6 +14,18 @@ feature 'User can sign in and out' do
     end
   end
 
+  context 'user signed in on the homepage' do
+    before do
+      visit '/'
+      click_link 'Sign up'
+      fill_in 'Email', with: 'test@test.com'
+      fill_in 'Password', with: 'test'
+      fill_in 'Password confirmation', with: 'test'
+      click_button 'Sign up'
+    end
+
+  end
+
 
 
 
