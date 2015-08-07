@@ -11,6 +11,12 @@ feature 'restaurants' do
     click_button 'Sign up'
   end
 
+  def create
+    visit '/'
+    click_link 'Add a restaurant'
+    fill_in 'Name', with: 'KFC'
+    click_button 'Create Restaurant'
+  end
 
 
 
@@ -61,7 +67,9 @@ feature 'restaurants' do
 
 
     scenario 'let a user edit a restaurant' do
-      visit ''
+      sign_up
+      create
+      visit '/'
       click_link 'Edit KFC'
       fill_in 'Name', with: 'Kentucky Fried Chicken'
       click_button 'Update Restaurant'
