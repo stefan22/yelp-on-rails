@@ -23,3 +23,4 @@ Working on two branches simultaneously
   party assets
 
 Added gems for testing - rspec ready (and ran bin/rails generate rspec:install)
+
